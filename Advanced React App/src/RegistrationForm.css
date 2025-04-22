@@ -1,0 +1,101 @@
+/* Center the form */
+.form-container {
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+  
+/* Form styling */
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+  
+/* Label styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+  
+/* Input styling */
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+  
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+  
+/* Success message styling */
+.success {
+    color: green;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+  
+/* Button styling */
+button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Green View Details button (Smaller) */
+.view-details-btn {
+    background-color: #28a745;
+    font-size: 14px;  /* Reduced font size */
+    padding: 8px 12px;
+    margin-top: 5px; /* Smaller padding */
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.view-details-btn:hover {
+    background-color: #218838;
+}
+
+/* User details section */
+.details {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 2px solid #ddd;
+    text-align: left;
+}
+
+.details h3 {
+    color: #333;
+}
+
+.user-details {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.no-data {
+    color: #777;
+    font-style: italic;
+}
