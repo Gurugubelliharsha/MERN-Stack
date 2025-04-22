@@ -1,0 +1,87 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #45718e; 
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    background: white;
+    width: 70%; 
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    color: black;
+    overflow-x: auto; 
+}
+
+/* Hide elements */
+.hidden {
+    display: none;
+}
+
+/* Input and Button Styling */
+input, button {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #468dda;
+}
+
+button {
+    background: #468dda;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background: #3a81cc;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    table-layout: fixed; 
+    word-wrap: break-word; 
+    background: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid black;
+    text-align: center;
+    word-break: break-word; 
+}
+
+th {
+    background: #2e5176;
+    color: white;
+}
+
+/* Search Box */
+#search {
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #468dda;
+}
+
+/* Logout Exit Button */
+.logout-btn {
+    background: rgb(215, 81, 81);
+    margin-top: 20px;
+}
+
+.logout-btn:hover {
+    background: darkred; 
+}

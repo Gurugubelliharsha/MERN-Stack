@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+    <!-- Welcome Page -->
+    <div id="welcome-page" class="container">
+        <h1>Welcome to XYZ Company</h1>
+        <button onclick="showLogin()">Get Started</button>
+    </div>
+
+    <!-- Login Page -->
+    <div id="login-page" class="container hidden">
+        <h2>HR Login</h2>
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Employee Management -->
+<div id="employee-page" class="container hidden">
+    <h2>Employee Management</h2>
+    
+    <input type="text" id="search" placeholder="Search Employees..." onkeyup="searchEmployees()">
+    
+    <input type="text" id="name" placeholder="Name">
+    <input type="email" id="email" placeholder="Email">
+    <input type="text" id="designation" placeholder="Designation">
+    <input type="number" id="salary" placeholder="Salary">
+    
+    <button onclick="addEmployee()">Add Employee</button>
+    <button onclick="loadEmployees(true)">Sort by Salary</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Designation</th>
+                <th>Salary</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="employee-list"></tbody>
+    </table>
+
+    <button onclick="showThankYouPage()" class="logout-btn">Exit</button>
+</div>
+
+    <!-- Thank You Page -->
+    <div id="thank-you-page" class="container hidden">
+        <h2>Thank You for Using EMS</h2>
+        <button onclick="restart()">Go to Home</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
